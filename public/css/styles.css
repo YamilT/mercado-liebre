@@ -10,7 +10,7 @@ body{
 
 a{
     text-decoration: none;
-    /* color: black; */
+  
 }
 
 li{
@@ -26,6 +26,7 @@ p{
 }
 
 :root{
+
     --colorAmarillo : #EAC926;
     --colorAzul: #03264C;
     --colorCeleste:  #1259c3;
@@ -35,17 +36,20 @@ p{
 }
 
 header{
+
     background-color:  var(--colorAmarillo);
     width: 100vw;
 }
 
 header img{
+
     display: left;
     max-width: 40%;
     padding: 25px 0 10px 25px;
 }
 
 header .barra{
+
     background-color: var(--colorGrisClaro);
     border: 1px solid var(--colorGrisOscuro);
     border-radius: 3px;
@@ -57,6 +61,7 @@ header .barra{
 }
 
 header #buscador {
+
     background-color: var(--colorGrisClaro);
     border: 1px solid var(--colorGrisOscuro);
     border-radius: 3px;
@@ -67,23 +72,29 @@ header #buscador {
 }
 
 header p{
+
     text-align: center;
     font-size: 12px;
     padding: 15px 0 15px 0;
     color: black;
 }
 
-header li{
-    font-size: 12px;
-}
 
 header li a{
+
     color: black;
 }
 
+
+header li{
+
+    font-size: 12px;
+}
+
+
 header .burger-menu{
-    /* background-color: var(--colorAzul); */
-    background-color: #0044aa;
+ 
+    background-color: #0044aa; 
     color: var(--colorGrisClaro);
     font-size: 20px;
     display: inline-block;
@@ -94,25 +105,28 @@ header .burger-menu{
 }
 
 footer{
+
     text-align: center;
     color: var(--colorGrisOscuro);
 }
 
 footer i{
+
     font-size: 2em;
-    /* color: var(--colorAzul); */
     color: #0044aa;
     margin-bottom: 10px;
     margin-top: 50px;
 }
 
 footer p{
+
     margin-right: 40px;
     margin-left: 40px;
     font-size: 12px;
 }
 
 footer .copyright{
+
     margin-top: 40px;
     margin-left: 20px;
     text-align: left;
