@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--grisClaro)
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+p, li{
+    font-size:12px;
+}
+
+li{
+    list-style:none;
+}
+
+
+:root{
+    --amarillo: #EAC926;
+    --azul:  #03264C;
+    --celeste:#1259c3;
+    --grisOscuro:#666;
+    --grisClaro: #ebebeb;
+    --verde:#39b54a;
+}
+
+/*-------------------------------------------------------------------------------- */
+
+.home header{
+    background-color: var(--amarillo);
+    padding:30px 20px 20px;
+}
+
+.home header .logo-busqueda{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+.home header .logo{
+    width: 48%;
+}
+
+.home header .busqueda{
+    width: 48%;
+    position: relative;
+}
+
+.home header .busqueda input{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 0;
+    padding:10px; 
+    color: var(--grisOscuro);
+    position: relative; 
+}
+
+.home header .busqueda i{
+    padding:8px 5px 8px 3px;
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+    display:block;
+    color: var(--grisOscuro);
+    background-color:#fff;
+    border-left: 0; 
+    border-radius:7px;
+}
+
+.home header .cuotas{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0 0;
+}
+
+.home header nav{
+    display:none;
+}
+
+.home header .cuenta{
+    margin-top: 15px;
+}
+
+.home header .burger-menu{
+    background-color: var(--celeste);
+    margin: 20px calc(50% - 20px) 0;
+    border-radius:5px;
+    display:inline-block;
+    padding: 8px 10px;
+}
+
+.home header .burger-menu i{
+    color:#fff;
+    font-size: 25px;
+}
+
+/*-------------------------------------------------------------------------------- */
+
+.home main{
+    width:100%;
+    margin: 0 auto 20px;
+}
+
+.home .productos{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.home .ultimaVista,.home .ofertas{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.home .ultimaVista h2,.home .ofertas h2{
+    width: 100%;
+    font-size:24px;
+    margin: 20px 0;
+}
+
+.home .producto{
+    width: 100%;
+    border: 1px solid var(--grisClaro);
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.home .poductoDetalles{
+    border-top:1px solid var(--grisClaro);
+    padding: 15px;
+    position:relative;
+}
+
+.home .precio-descuento{
+    display: flex;
+    align-items: baseline;
+}
+
+.home .envio{
+    background-color:#fff;
+    width: 30px;
+    height: 30px;
+    border:1px solid  var(--verde);
+    border-radius:50%;
+    text-align:center;
+    line-height: 30px;
+    display:block;
+    position: absolute ;
+    right: 20px;
+    top: -15px;
+}
+
+.home .envio i,.home .descuento{
+    color: var(--verde);
+}
+
+.home .precio{
+    font-size:18px;
+    flex-grow: 0.3;
+}
+
+.home .descuento{
+    font-size:16px;
+    text-transform: lowercase;
+    flex-grow: 0.7;
+}
+
+.home .descripcion{
+    display: none;
+    margin: 10px 0 0;
+    font-size:16px;
+
+}
+
+/*-------------------------------------------------------------------------------- */
+
+.home footer{
+    padding: 20px 5px;
+    background-color:#fff;
+}
+
+.home footer section{
+    margin: 30px 0;
+    padding: 20px 30px;
+}
+
+.home footer section i,.home footer section h3,.home footer section p{
+    text-align: center;
+}
+
+.home footer section i{
+    color: var(--celeste);
+    font-size: 2em;
+    display:block;
+    margin:0 0 15px;
+}
+
+.home footer section h3,  .home footer p{
+    color: var(--grisOscuro);
+}
+
+.home footer p.copyright{
+    margin: 0 20px 0;
+}
+
+/*-------------------------------------------------------------------------------- */
+
+/*Tablet*/
+@media (min-width: 361px){
+    /*Header*/
+    .home header .logo{width: 32%;}
+
+    .home header .busqueda{width: 32%;}
+
+    .home header .cuotas{ width: 32%; margin: 0;} 
+
+    .home header nav{
+        display:block;
+        margin: 30px 0 0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home header nav ul{
+        display:flex;
+        align-items: center;
+        margin: 0;
+    }
+
+    .home header .cuenta{
+        margin-top: 0;
+    }
+
+    .home header nav li{
+        margin: 0 5px;
+    }
+
+    .home header .burger-menu{   
+        display:none;
+    }
+
+    /*--MAIN--*/
+    .home .producto{
+        width: 45%;
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        margin: 0 0 25px;
+    }
+
+    .home .descripcion{
+        display: block;
+    }
+}
+
+/*-desktop-*/
+@media (min-width: 769px){
+    /*--HEADER--*/
+    .home header nav li{
+        margin: 0 10px;
+    }
+    /*--MAIN--*/
+    .home .producto{
+        width: 22%;
+        cursor:pointer;
+        }
+    }
