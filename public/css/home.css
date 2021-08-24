@@ -54,11 +54,11 @@ li{
 }
 
 .home header .logo{
-    width: 48%;
+    width: 38%;
 }
 
 .home header .busqueda{
-    width: 48%;
+    width: 40%;
     position: relative;
 }
 
@@ -281,3 +281,5 @@ li{
         cursor:pointer;
         }
     }
+
+    
