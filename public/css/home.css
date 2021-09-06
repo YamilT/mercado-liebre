@@ -127,6 +127,7 @@ li{
     display:flex;
     justify-content: space-between;
     flex-wrap:wrap;
+    align-items: flex-start;
 }
 
 .home .ultimaVista h2,.home .ofertas h2{
@@ -165,6 +166,13 @@ li{
     position: absolute ;
     right: 20px;
     top: -15px;
+    transition: transform .5s;
+    transform: rotate(0deg);
+}
+
+.home .envio:hover {
+    transition: transform .5s;
+    transform: rotate(-90deg);
 }
 
 .home .envio i,.home .descuento{
@@ -187,6 +195,10 @@ li{
     margin: 10px 0 0;
     font-size:16px;
 
+}
+
+.home .product:hover .descripcion {
+    display: block;
 }
 
 /*-------------------------------------------------------------------------------- */

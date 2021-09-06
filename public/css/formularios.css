@@ -14,7 +14,8 @@ header .logo-busqueda{
 }
 
  header .logo{
-    width: 40%;
+    width: 48%;
+    display: block;
 }
 
 header .busqueda{
@@ -203,8 +204,13 @@ header .burger-menu i{
 .formulario .botones .btn-enviar{
     background-color: var(--celeste);
     color:#fff;
+    transition: background-color .5s;
 }
 
+.formulario .botones .btn-enviar:hover{
+    background-color: #0022aa;
+    color: #fff;
+}
 
 /*----------Diseño adaptativo----------*/
 /*-tablet-*/
@@ -240,8 +246,8 @@ footer{
 }
 
 footer section{
-    margin: 30px 0;
-    padding: 20px 30px;
+    margin: 30px auto;
+    width: 90%;
 }
 
 footer section i, footer section h3, footer section p{
@@ -254,6 +260,16 @@ footer section i{
     font-size: 2em;
     margin:0 auto 15px;
     display:block;
+    
+}
+
+footer section:hover i {
+    color:#0022aa;
+    transition: color .5s;
+}
+
+footer section h3 {
+    margin: 0 0 5px;
 }
 
 footer section h3, footer p{
@@ -264,3 +280,21 @@ footer p.copyright{
     margin: 0 20px 0;
 }
 
+
+@media (min-width: 769px){
+    footer{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    footer section{
+        width: 30%;
+    }
+
+    footer p{
+        width:100%;
+        padding: 0 0 0 30px;
+    }
+    
+}
